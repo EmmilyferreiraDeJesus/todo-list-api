@@ -3,19 +3,17 @@ package br.com.emmilyferreira.to_do_list.controller;
 import br.com.emmilyferreira.to_do_list.entity.Todo;
 import br.com.emmilyferreira.to_do_list.service.TodoService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@AllArgsConstructor
 @RestController
 @RequestMapping("/todos")
 public class TodoController {
 
-    private TodoService todoService;
-
-    public TodoController(TodoService todoService) {
-        this.todoService = todoService;
-    }
+    private final TodoService todoService;
 
     @PostMapping
     public List<Todo> create(@RequestBody @Valid Todo todo){
