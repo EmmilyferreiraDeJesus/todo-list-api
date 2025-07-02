@@ -53,24 +53,23 @@ Ele permite fazer **requisições simuladas** e validar as respostas da API de m
 - ✅ Criar tarefa com sucesso
 - ✅ Criar tarefa com erro de validação
 - ✅ Atualizar tarefa com sucesso
-- ✅ Atualizar tarefa com erro
+- ✅ Atualizar tarefa com erro de validação
 - ✅ Deletar tarefa com sucesso
-- ✅ Deletar tarefa com falha
+- ✅ Deletar tarefa com falha no id
 - ✅ Listar todas as tarefas
 
 ---
 
 ## Como Executar
 
+- Clone o repositório
+
+- Acesse a pasta do projeto
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-
-# Acesse a pasta do projeto
-cd seu-repositorio
-
-# Configure o application.properties (ex: conexão com o banco MySQL)
+# Configure o application.properties para conexão com o banco MySQL
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
 
 # Execute o projeto
 ./mvnw spring-boot:run
@@ -86,7 +85,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ## 🌐 Endpoints da API
 
-### 📍 Listar tarefas (POST)
+### 📍 Criar tarefas (POST)
 
 - POST http://localhost:8080/todos
 
@@ -118,7 +117,7 @@ http://localhost:8080/swagger-ui/index.html
 ]
 ```
 
-### 📍 Listar tarefas (PUT)
+### 📍 Editar tarefas (PUT)
 
 - PUT http://localhost:8080/todos
 
@@ -134,7 +133,7 @@ http://localhost:8080/swagger-ui/index.html
 ]
 ```
 
-### 📍 Listar tarefas (DELETE)
+### 📍 Excluir tarefas (DELETE)
 
 - DELETE http://localhost:8080/todos/1
 
