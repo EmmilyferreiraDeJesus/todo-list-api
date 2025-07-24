@@ -4,7 +4,7 @@ API para gerenciamento de tarefas (To-Do List), desenvolvida com o objetivo de p
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## ⚙️ Tecnologias utilizadas
 
 - **Spring Boot**
 - **Spring MVC**
