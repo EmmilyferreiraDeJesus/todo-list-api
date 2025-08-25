@@ -7,10 +7,10 @@ API para gerenciamento de tarefas (To-Do List), desenvolvida com o objetivo de p
 ## ⚙️ Tecnologias Utilizadas
 
 - **Spring Boot**
-- **Spring MVC**
-- **Spring Data JPA**
+  - **Spring MVC**
+  - **Spring Data JPA**
+  - **Spring Doc OpenAPI (Swagger)**
 - **MySQL**
-- **Spring Doc OpenAPI (Swagger)**
 - **Lombok**
 - **Bean Validation (Jakarta Validation)**
 - **Testes Unitários com WebTestClient**
