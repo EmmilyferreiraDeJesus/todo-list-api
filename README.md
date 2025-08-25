@@ -62,9 +62,9 @@ Ele permite fazer **requisições simuladas** e validar as respostas da API de m
 
 ## Como Executar
 
-- Clone o repositório
+1. Clone o repositório:
 
-- Acesse a pasta do projeto
+2. Acesse a pasta do projeto:
 
 ```bash
 # Configure o application.properties para conexão com o banco MySQL
@@ -75,7 +75,7 @@ spring.datasource.password=sua_senha
 ./mvnw spring-boot:run
 ```
 
-Acesse o Swagger em:
+3. Acesse o Swagger em:
 
 ```bash
 http://localhost:8080/swagger-ui/index.html
